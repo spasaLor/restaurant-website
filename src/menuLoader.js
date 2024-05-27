@@ -1,0 +1,65 @@
+export function loadMenu(){
+    const content=document.querySelector('.content');
+    content.innerHTML="";
+    const div1= document.createElement('div');
+    div1.classList.add('menu');
+    const div2=document.createElement('div');
+    div2.classList.add('btns');
+    const btn1=document.createElement('button');
+    btn1.type="button";
+    btn1.id='burger';
+    btn1.textContent="Burger";
+    const btn2=document.createElement('button');
+    btn2.type="button";
+    btn2.textContent="pizza";
+    const btn3=document.createElement('button');
+    btn3.type="button";
+    btn3.textContent="Dessert";
+    div2.append(btn1,btn2,btn3);
+    div1.appendChild(div2);
+
+    const div3=document.createElement('div');
+    div3.classList.add('container');
+    let div4=document.createElement('div');
+    div4.classList.add('cont-item');
+    let div5=document.createElement('div');
+    div5.classList.add('img');
+    let h31=document.createElement('h3');
+    h31.classList.add('name');
+    h31.textContent='fish burger';
+    let p1=document.createElement('p');
+    p1.classList.add('desc');
+    p1.textContent='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula est et nunc auctor rhoncus.';
+    div4.append(div5,h31,p1);
+    div3.appendChild(div4);
+    div1.appendChild(div3);
+
+    div4=document.createElement('div');
+    div4.classList.add('cont-item');
+    div5=document.createElement('div');
+    div5.classList.add('img');
+    h31=document.createElement('h3');
+    h31.classList.add('name');
+    h31.textContent='bacon cheeseburger';
+    p1=document.createElement('p');
+    p1.classList.add('desc');
+    p1.textContent='Integer scelerisque risus quis nunc efficitur tincidunt. Aliquam vitae turpis pharetra, sagittis metus vel, sollicitudin tortor. Praesent in mauris lorem.';
+    div4.append(div5,h31,p1);
+    div3.appendChild(div4);
+    div1.appendChild(div3);
+
+    div4=document.createElement('div');
+    div4.classList.add('cont-item');
+    div5=document.createElement('div');
+    div5.classList.add('img');
+    h31=document.createElement('h3');
+    h31.classList.add('name');
+    h31.textContent='beef burger';
+    p1=document.createElement('p');
+    p1.classList.add('desc');
+    p1.textContent='Integer scelerisque risus quis nunc efficitur tincidunt. Aliquam vitae turpis pharetra, Nam faucibus sem in erat laoreet, sed convallis est malesuada.';
+    div4.append(div5,h31,p1);
+    div3.appendChild(div4);
+    div1.appendChild(div3);
+    content.appendChild(div1);
+}
